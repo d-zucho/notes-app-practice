@@ -14,3 +14,79 @@ body {
     gap: 20px;
   }
 }
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  outline: none;
+}
+
+textarea,
+input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.note-form button {
+  background-color: rgb(106, 175, 198);
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-buttons button {
+  color: white;
+  font-weight: 600;
+  flex: auto;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 20px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notes-header button {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  padding: 10px 8px;
+  /* line-height: 0; */
+  max-width: fit-content;
+}
+
+h2 {
+  margin: 0;
+}
