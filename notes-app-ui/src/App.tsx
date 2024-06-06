@@ -81,6 +81,7 @@ const App = () => {
     setContent('')
     setSelectedNote(null)
   }
+  //
 
   return (
     <div className='app-container'>
